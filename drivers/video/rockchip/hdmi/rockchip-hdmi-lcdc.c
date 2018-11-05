@@ -92,6 +92,28 @@ static const struct hdmi_video_timing hdmi_mode[] = {
 	},
 	{
 		.mode = {
+			.name = "1024x600p@60Hz",
+			.refresh = 60,
+			.xres = 1024,
+			.yres = 600,
+			.pixclock = 74250000,
+			.left_margin = 160,
+			.right_margin = 24,
+			.upper_margin = 29,
+			.lower_margin = 3,
+			.hsync_len = 136,
+			.vsync_len = 6,
+			.sync = 0,
+			.vmode = 0,
+			.flag = 0,
+		},
+		.vic = HDMI_VIDEO_DMT | 10,  //512 | 10,
+		.vic_2nd = 0,
+		.pixelrepeat = 1,
+		.interface = OUT_P888,
+	},
+	{
+		.mode = {
 			.name = "1280x720p@24Hz",
 			.refresh = 24,
 			.xres = 1280,
